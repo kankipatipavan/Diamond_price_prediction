@@ -72,7 +72,7 @@ def Case_study():
 
     st.title("Casestudy analysis on Diamonds dataset")
     st.image("diamond.png", width= 600)
-    df = pd.read_csv(r'C:\Users\NGS019\Downloads\diamonds.csv')
+    df = pd.read_csv(r'diamonds.csv')
     data = df.drop(df.columns[0],axis=1)
     numdata = data.select_dtypes(include='number')
     
@@ -144,7 +144,7 @@ Interpretations of correlational relationships
 def Prediction():
 
     st.title("Prediction price of a Diamond ")
-    df = pd.read_csv(r'C:\Users\NGS019\Downloads\diamonds.csv')
+    df = pd.read_csv(r'diamonds.csv')
     data = df.drop(df.columns[0],axis=1)
     from sklearn.linear_model import LinearRegression
     lr = LinearRegression()
